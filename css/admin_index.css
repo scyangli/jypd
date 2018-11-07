@@ -1,9 +1,10 @@
 *{margin:0;padding:0;}
 div.left{
-    width:265px;
+    width:20%;
     height:900px;
     background:#000;
     color:#fff;
+    float:left;
 }
 div.logo{
     font:24px MicrosoftYaHei;
@@ -11,26 +12,91 @@ div.logo{
 .nav{
     list-style:none;
     margin-top:20px;
-    margin-left:20px;
 }
-.nav li i{
+.nav div.item{
+    height:50px;
+    line-height:50px;
+    padding-left:20px;
+    position:relative;
+}
+.nav li i:first-child{
     width:24px;
     font-size:18px;
     margin-right:5px;
+}
+.nav li i:last-child{
+    font-size:24px;
+    position:absolute;
+    right:8px;
+}
+.nav li i:last-child:hover{
+    transform:rotate(180deg);
+    transition:0.5s linear;
 }
 .nav li span{
     font-size:14px;
 }
 .nav #list_ul{
     list-style:none;
-    padding-left:40px;
     display:none;
 }
 .nav ul li{
     font-size:14px;
     height:50px;
     line-height:50px;
+    padding-left:60px;
+}
+.nav div.item:hover,.nav ul li:hover{
+    background-color:#1890ff!important;
 }
 .active{
     display: block!important;
+}
+div.right{
+    width:80%;
+    height:900px;
+    float:left;
+}
+.right ul{
+    list-style:none;
+    border-bottom:1px solid #ddd;
+}
+.right ul:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.right ul li{
+    float:left;
+    color:#303133;
+    font-size:14px;
+    height:40px;
+    line-height:40px;
+    margin:10px 20px 0 0;
+}
+.right ul li:hover{
+    border-bottom:2px solid #409eff;
+    color:#409eff;
+}
+.search{
+    margin-top:5px;
+    border:1px solid #ddd;
+    border-radius:3px;
+    padding:3px;
+}
+.content .search button{
+    display:inline-block;
+    padding:5px 8px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:3px;
+}
+.search button span{
+    font-size:14px;
+}
+.search select{
+    height:30px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:3px 0 0 3px;
 }
