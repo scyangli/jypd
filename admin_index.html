@@ -12,6 +12,7 @@
 </head>
 <body>
   <div>
+    <!--左边垂直导航栏-->
     <div class="left">
       <div class="logo">
         <img src="" alt="">
@@ -39,9 +40,11 @@
         </ul>
       </div>
     </div>
+    <!--右边内容部分-->
     <div class="right">
-      <div class="r_nav">
-        <div style="margin:30px 0 0 20px">
+      <div style="margin:30px 0 0 20px">
+        <!--选项卡导航-->
+        <div class="r_nav">
           <ul>
             <li>愣型管理</li>
             <li>客户管理</li>
@@ -51,19 +54,104 @@
             <li>压线公式</li>
             <li>车辆管理</li>
           </ul>
-          <div class="content">
-            <div class="search">
-              <button>
-                <i class="icon iconfont icon-iconjia"></i>
-                <span>新增楞型</span>
-              </button>
-              <span style="color:#ddd;margin:0 10px;">|</span>
-              <select name="r_sel" id="">
-                <option value="编码" selected>编码</option>
-                <option value="订单号">订单号</option>
-                <option value="用户电话">用户电话</option>
-              </select>
-            </div>
+        </div>
+        <div class="content">
+          <!--搜索栏-->
+          <div class="search">
+            <button>
+              <i class="icon iconfont icon-iconjia"></i>
+              <span>新增楞型</span>
+            </button>
+            <span style="color:#ddd;margin:0 10px;">|</span>
+            <select name="r_sel" id="">
+              <option value="编码" selected>编码</option>
+              <option value="订单号">订单号</option>
+              <option value="用户电话">用户电话</option>
+            </select>
+            <input type="text" placeholder="搜索关键字">
+            <button>
+              <i class="icon iconfont icon-search" style="color:#fff;"></i>
+            </button>
+            <span style="color:#ddd;margin:0 10px;">|</span>
+            <button>
+              <i class="icon iconfont icon-excel"></i>
+              导入excel
+            </button>
+          </div>
+          <!--table内容部分-->
+          <div class="table_content" id="table_content">
+            <table border="1">
+              <thead>
+              <tr>
+                <th>编码</th>
+                <th>愣型</th>
+                <th>楞高</th>
+                <th>操作</th>
+              </tr>
+              </thead>
+              <tbody id="table_body" align="center">
+                <tr class="tr_active">
+                  <td>lb001</td>
+                  <td>AB</td>
+                  <td>85</td>
+                  <td>
+                    <button>
+                      <i class="icon iconfont icon-bianji"></i>
+                      编辑
+                    </button>
+                    <button>
+                      <i class="icon iconfont icon-shanchu"></i>
+                      删除
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>lb001</td>
+                  <td>AB</td>
+                  <td>85</td>
+                  <td>
+                    <button>
+                      <i class="icon iconfont icon-bianji"></i>
+                      编辑
+                    </button>
+                    <button>
+                      <i class="icon iconfont icon-shanchu"></i>
+                      删除
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>lb001</td>
+                  <td>AB</td>
+                  <td>85</td>
+                  <td>
+                    <button>
+                      <i class="icon iconfont icon-bianji"></i>
+                      编辑
+                    </button>
+                    <button>
+                      <i class="icon iconfont icon-shanchu"></i>
+                      删除
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>lb001</td>
+                  <td>AB</td>
+                  <td>85</td>
+                  <td>
+                    <button>
+                      <i class="icon iconfont icon-bianji"></i>
+                      编辑
+                    </button>
+                    <button>
+                      <i class="icon iconfont icon-shanchu"></i>
+                      删除
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
